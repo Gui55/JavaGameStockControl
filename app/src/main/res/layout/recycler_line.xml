@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="167dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <RelativeLayout
+                android:background="@drawable/cardview_round"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:paddingLeft="10dp"
+                    android:paddingTop="12dp"
+                    android:id="@+id/gamePhoto"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_width="138dp"
+                    android:layout_height="138dp"/>
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:textAlignment="center"
+                    android:text="TTTTTTTTTT"
+                    android:id="@+id/gameName"
+                    android:layout_toRightOf="@id/gamePhoto"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"/>
+
+                <ImageButton
+                    android:id="@+id/minusButton"
+                    android:layout_toRightOf="@id/gamePhoto"
+                    android:layout_below="@id/gameName"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/minus"
+                    android:background="@drawable/button_round"/>
+
+                <TextView
+                    android:layout_toEndOf="@id/minusButton"
+                    android:paddingTop="15dp"
+                    android:textAlignment="center"
+                    android:id="@+id/gameStock"
+                    android:text="TTTTTTTTT"
+                    android:layout_toRightOf="@id/gamePhoto"
+                    android:layout_below="@id/gameName"
+                    android:layout_width="105dp"
+                    android:layout_height="50dp"/>
+
+                <ImageButton
+                    android:id="@+id/plusButton"
+                    android:layout_toRightOf="@id/gameStock"
+                    android:layout_below="@id/gameName"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/plus"
+                    android:background="@drawable/button_round"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
